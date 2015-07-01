@@ -391,12 +391,14 @@ function pickCard() {
   result = (arrayOfCards[Math.floor(Math.random() * arrayOfCards.length)]);
   console.log(result.img);
 
-
 }
+
+
+
 
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
-  if(calledOneTime === false || !(buttonClick % 2 === 0)) {
+  if(calledOneTime === false || (buttonClick % 2 !== 0)) {
         calledOneTime = true;
         $(".default").append("<img src=" + result.img + ">").hide().fadeIn(2000);
         $(".name").append("<p>" + result.name + "</p>");
@@ -411,12 +413,24 @@ function displayImg() {
 
 }
 
+//rotate the card if true
+function rotateCard() {
+  var rotate = [true, false];
+  rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
+  console.log(rotate);
+  if (rotate === true) {
+    $(".default img").addClass("rotate");
+  }
+
+}
+
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
 $("button").click(function(){
   buttonCount();
   pickCard();
   displayImg();
+  rotateCard();
 
 });
 
