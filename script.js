@@ -399,9 +399,13 @@ function displayImg() {
   if(calledOneTime === false || !(buttonClick % 2 === 0)) {
         calledOneTime = true;
         $(".default").append("<img src=" + result.img + ">").hide().fadeIn(2000);
+        $(".name").append("<p>" + result.name + "</p>");
+        $(".description").append("<p>" + result.description + "</p>");
         console.log("clicked odd" + buttonClick);
     }else {
         $(".default img").fadeOut();
+        $(".name p").fadeOut();
+        $(".description p").fadeOut();
         console.log("clicked even- hide" + buttonClick);
     }
 
