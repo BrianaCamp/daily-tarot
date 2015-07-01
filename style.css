@@ -1,0 +1,14 @@
+
+
+
+
+.default {
+  background-image: url(images/default1.png);
+  height: 400px;
+  width: 200px;
+}
+
+img {
+  width: 200px;
+  height: 400px
+}
