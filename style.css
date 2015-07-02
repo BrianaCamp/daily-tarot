@@ -1,16 +1,22 @@
-
+.wrapper {
+  text-align: center;
+}
 
 
 
 .default {
-  background-image: url(images/default1.png);
-  height: 400px;
-  width: 200px;
+  background-image: url('images/daily-tarot-defaultv7.png');
+  background-size: cover;
+  width: 400px;
+  height: 536px;
+  border-radius: 2%;
+  margin: 0 auto;
 }
 
 img {
-  width: 200px;
-  height: 400px
+width: 400px;
+height: 550px;
+margin: 0 auto;
 }
 
 .rotate {
