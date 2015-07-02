@@ -2,25 +2,57 @@
   text-align: center;
 }
 
+body {
+  font-family: 'tk-aktiv-grotesk-std', sans-serif;
+}
 
-
+nav img {
+  height: 10%;
+  width: 17%;
+  margin-bottom: 30px;
+}
 .default {
-  background-image: url('images/daily-tarot-defaultv7.png');
-  background-size: cover;
+  background-image: url('images/daily-tarot-logov3.svg');
+  background-size: 57px;
   width: 400px;
   height: 536px;
   border-radius: 2%;
+  border: solid black 2px;
   margin: 0 auto;
 }
 
 img {
-width: 400px;
-height: 550px;
-margin: 0 auto;
+  width: 360px;
+  height: 532px;
+  margin: 0 auto;
+}
+
+.name p {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #83cdb9;
+  letter-spacing: 2px;
+}
+
+.description p{
+  width: 60%;
+  display: inline-block;
+  line-height: 1.4em;
+}
+
+button {
+  background-color:#d465dc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  border: none;
+  padding: 20px 50px;
+  margin-top: 20px;
 }
 
 .rotate {
-  -moz-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
