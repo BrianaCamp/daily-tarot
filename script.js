@@ -6,54 +6,63 @@ var arrayOfCards = [
   {
     name : "The Chariot",
     img : "images/tarot-chariot.jpg",
-    description: "Succour, providence also war, triumph, presumption, venge­ance, trouble. Reversed: Riot, quarrel, dispute, litigation, defeat.",
+    description: "Succour, providence also war, triumph, presumption, venge­ance, trouble.",
+    reverse : "Reversed: Riot, quarrel, dispute, litigation, defeat.",
     category : "major"
   },
   {
     name : "Ace of Cups",
     img  : "images/tarot-cups-01.jpg",
-    description : "The waters are beneath, and thereon are water-lilies; the hand issues from the cloud, holding in its palm the cup, from which four streams are pouring; a dove, bearing in its bill a cross-marked Host, descends to place the Wafer in the Cup; the dew of water is falling on all sides. It is an intimation of that which may lie behind the Lesser Arcana. Divinatory Meanings: House of the true heart, joy, content, abode, nourishment, abundance, fertility; Holy Table, felicity hereof. Reversed: House of the false heart, mutation, instability, revolution.",
+    description : "The waters are beneath, and thereon are water-lilies; the hand issues from the cloud, holding in its palm the cup, from which four streams are pouring; a dove, bearing in its bill a cross-marked Host, descends to place the Wafer in the Cup; the dew of water is falling on all sides. It is an intimation of that which may lie behind the Lesser Arcana. Divinatory Meanings: House of the true heart, joy, content, abode, nourishment, abundance, fertility; Holy Table, felicity hereof.",
+    reverse : "Reversed: House of the false heart, mutation, instability, revolution.",
     category : "cups"
   },
   {
     name : "Two of Cups",
     img : "images/tarot-cups-02.jpg",
     description : "A youth and maiden are pledging one another, and above their cups rises the Caduceus of Hermes, between the great wings of which there appears a lion's head. It is a variant of a sign which is found in a few old examples of this card. Some curious emblematical meanings are attached to it, but they do not concern us in this place. Divinatory Meanings: Love, passion, friendship, affinity, union, concord, sympathy, the interrelation of the sexes, and - as a suggestion apart from all offices of divination - that desire which is not in Nature, but by which Nature is sanctified.",
+    reverse : "",
     category : "cups"
 
   },
   {
     name : "Three of Cups",
     img : "images/tarot-cups-03.jpg",
-    description : "Maidens in a garden-ground with cups uplifted, as if pledging one another. Divinatory Meanings: The conclusion of any matter in plenty, perfection and merriment; happy issue, victory, ful­fil­ment, solace, healing, Reversed: Expe­dition, dispatch, achievement, end. It signifies also the side of excess in physical enjoyment, and the pleasures of the senses.",
+    description : "Maidens in a garden-ground with cups uplifted, as if pledging one another. Divinatory Meanings: The conclusion of any matter in plenty, perfection and merriment; happy issue, victory, ful­fil­ment, solace, healing.",
+    reverse : "Reversed: Expe­dition, dispatch, achievement, end. It signifies also the side of excess in physical enjoyment, and the pleasures of the senses.",
     category : "cups"
 
   },
   {
     name : "Four of Cups",
     img : "images/tarot-cups-04.jpg",
-    description : "A young man is seated under a tree and contemplates three cups set on the grass before him; an arm issuing from a cloud offers him another cup. His expression notwithstanding is one of discontent with his environment. Divinatory Meanings: Weariness, disgust, aversion, imaginary vexations, as if the wine of this world had caused satiety only; another wine, as if a fairy gift, is now offered the wastrel, but he sees no consolation therein. This is also a card of blended pleasure. Reversed: Novelty, presage, new instruction, new relations.",
+    description : "A young man is seated under a tree and contemplates three cups set on the grass before him; an arm issuing from a cloud offers him another cup. His expression notwithstanding is one of discontent with his environment. Divinatory Meanings: Weariness, disgust, aversion, imaginary vexations, as if the wine of this world had caused satiety only; another wine, as if a fairy gift, is now offered the wastrel, but he sees no consolation therein. This is also a card of blended pleasure.",
+    reverse : "Reversed: Novelty, presage, new instruction, new relations.",
     category : "cups"
 
   },
   {
     name : "Five of Cups",
     img : "images/tarot-cups-05.jpg",
-    description : "A dark, cloaked figure, looking sideways at three prone cups two others stand upright behind him; a bridge is in the background, leading to a small keep or holding. Divanatory Meanings: It is a card of loss, but something remains over; three have been taken, but two are left; it is a card of inheritance, patrimony, trans­mission, but not corresponding to expectations; with some interpreters it is a card of marriage, but not without bitterness or frustration. Reversed: News, alliances, affinity, consanguinity, ancestry, return, false projects.",
+    description : "A dark, cloaked figure, looking sideways at three prone cups two others stand upright behind him; a bridge is in the background, leading to a small keep or holding. Divanatory Meanings: It is a card of loss, but something remains over; three have been taken, but two are left; it is a card of inheritance, patrimony, trans­mission, but not corresponding to expectations; with some interpreters it is a card of marriage, but not without bitterness or frustration.",
+    reverse : "Reversed: News, alliances, affinity, consanguinity, ancestry, return, false projects.",
     category : "cups"
+
 
   },
   {
     name : "Six of Cups",
     img : "images/tarot-cups-06.jpg",
-    description : "Children in an old garden, their cups filled with flowers. Divinatory Meanings: A card of the past and of memories, looking back, as - for example - on childhood; happiness, enjoyment, but coming rather from the past; things that have vanished. Another reading reverses this, giving new relations, new knowl­edge, new environment, and then the children are disporting in an unfamiliar precinct. Reversed: The future, renewal, that which will come to pass presently.",
+    description : "Children in an old garden, their cups filled with flowers. Divinatory Meanings: A card of the past and of memories, looking back, as - for example - on childhood; happiness, enjoyment, but coming rather from the past; things that have vanished. Another reading reverses this, giving new relations, new knowl­edge, new environment, and then the children are disporting in an unfamiliar precinct.",
+    reverse : "Reversed: The future, renewal, that which will come to pass presently.",
     category : "cups"
 
   },
   {
     name : "Seven of Cups",
     img : "images/tarot-cups-07.jpg",
-    description : "Strange chalices of vision, but the images are more especially those of the fantastic spirit. Divinatory Meanings: Fairy favours, images of reflection, sentiment, imagination, things seen in the glass of contemplation; some attainment in these degrees, but nothing permanent or substantial is suggested. Reversed: Desire, will, determination, project.",
+    description : "Strange chalices of vision, but the images are more especially those of the fantastic spirit. Divinatory Meanings: Fairy favours, images of reflection, sentiment, imagination, things seen in the glass of contemplation; some attainment in these degrees, but nothing permanent or substantial is suggested.",
+    reverse : "Reversed: Desire, will, determination, project.",
     category : "cups"
 
   },
@@ -61,160 +70,183 @@ var arrayOfCards = [
     name : "Eight of Cups",
     img : "images/tarot-cups-08.jpg",
     description : "A man of dejected aspect is deserting the cups of his felicity, enterprise, under­taking or previous concern. Divinatory Meanings: The card speaks for itself on the surface, but other readings are entirely antithetical - giving joy, mildness, timidity, honour, modesty. In practice, it is usually found that the card shews the decline of a matter, or that a matter which has been thought to be important is really of slight consequence - either for good or evil. Reversed: Great joy, happiness, feasting.",
+    reverse : "",
     category : "cups"
 
   },
   {
     name : "Nine of Cups",
     img : "images/tarot-cups-09.jpg",
-    description : "A goodly personage has feasted to his heart's content, and abundant refresh­ment of wine is on the arched counter behind him, seeming to indicate that the future is also assured. The picture offers the material side only, but there are other aspects. Divinatory Meanings: Concord, contentment, physical bien-etre; also victory, success, advantage; satisfaction for the Querent or person for whom the consultation is made. Reversed: Truth, loyalty, liberty; but the readings vary and include mistakes, imperfections, etc.",
+    description : "A goodly personage has feasted to his heart's content, and abundant refresh­ment of wine is on the arched counter behind him, seeming to indicate that the future is also assured. The picture offers the material side only, but there are other aspects. Divinatory Meanings: Concord, contentment, physical bien-etre; also victory, success, advantage; satisfaction for the Querent or person for whom the consultation is made.",
+    reverse : "Reversed: Truth, loyalty, liberty; but the readings vary and include mistakes, imperfections, etc.",
     category : "cups"
 
   },
   {
     name : "Ten of Cups",
     img : "images/tarot-cups-10.jpg",
-    description : "Appearance of Cups in a rainbow; it is contemplated in wonder and ecstacy by a man and woman below, evidently husband and wife. His right arm is about her; his left is raised upward; she raises her right arm. The two children dancing near them have not observed the prodigy but are happy after their own manner. There is a home-scene beyond. Divinatory Meanings: Contentment, repose of the entire heart; the perfection of that state; also perfection of human love and friendship; if with several picture-cards, a person who is taking charge of the Querent's interests; also the town, village or country inhabited by the Querent. Reversed: Repose of the false heart, indignation, violence.",
+    description : "Appearance of Cups in a rainbow; it is contemplated in wonder and ecstacy by a man and woman below, evidently husband and wife. His right arm is about her; his left is raised upward; she raises her right arm. The two children dancing near them have not observed the prodigy but are happy after their own manner. There is a home-scene beyond. Divinatory Meanings: Contentment, repose of the entire heart; the perfection of that state; also perfection of human love and friendship; if with several picture-cards, a person who is taking charge of the Querent's interests; also the town, village or country inhabited by the Querent.",
+    reverse : "Reversed: Repose of the false heart, indignation, violence.",
     category : "cups"
 
   },
   {
     name : "Page of Cups",
     img : "images/tarot-cups-11.jpg",
-    description : "A fair, pleasing, somewhat effeminate page, of studious and intent aspect, contemplates a fish rising from a cup to look at him. It is the pictures of the mind taking form. Divinatory Meanings: Fair young man, one impelled to render service and with whom the Querent will be connected; a studious youth; news, message; application, reflection, medi­tation; also these things directed to business. Reversed: Taste, inclination, attachment, seduction, deception, artifice.",
+    description : "A fair, pleasing, somewhat effeminate page, of studious and intent aspect, contemplates a fish rising from a cup to look at him. It is the pictures of the mind taking form. Divinatory Meanings: Fair young man, one impelled to render service and with whom the Querent will be connected; a studious youth; news, message; application, reflection, medi­tation; also these things directed to business. ",
+    reverse : "Reversed: Taste, inclination, attachment, seduction, deception, artifice.",
     category : "cups"
 
   },
   {
     name : "Knight of Cups",
     img : "images/tarot-cups-12.jpg",
-    description : "Graceful, but not warlike; riding quietly, wearing a winged helmet, referring to those higher graces of the imagination which sometimes characterize this card. He too is a dreamer, but the images of the side of sense haunt him in his vision. Divinatory Meanings: Arrival, approach - sometimes that of a messenger; advances, proposition, demeanour, invitation, incitement. Reversed: Trickery, artifice, subtlety, swindling, duplicity, fraud.",
+    description : "Graceful, but not warlike; riding quietly, wearing a winged helmet, referring to those higher graces of the imagination which sometimes characterize this card. He too is a dreamer, but the images of the side of sense haunt him in his vision. Divinatory Meanings: Arrival, approach - sometimes that of a messenger; advances, proposition, demeanour, invitation, incitement.",
+    reverse : "Reversed: Trickery, artifice, subtlety, swindling, duplicity, fraud.",
     category : "cups"
 
   },
   {
     name : "Queen of Cups",
     img : "images/tarot-cups-13.jpg",
-    description : "Beautiful, fair, dreamy - as one who sees visions in a cup. This is, however, only one of her aspects; she sees, but she also acts, and her activity feeds her dream. Divinatory Meanings: Good, fair woman; honest, devoted woman, who will do service to the Querent; loving intelligence, and hence the gift of vision; success, happiness, pleasure; also wisdom, virtue; a perfect spouse and a good mother. Reversed: The accounts vary; good woman; otherwise, distinguished woman but one not to be trusted; perverse woman; vice, dishonour, depravity.",
+    description : "Beautiful, fair, dreamy - as one who sees visions in a cup. This is, however, only one of her aspects; she sees, but she also acts, and her activity feeds her dream. Divinatory Meanings: Good, fair woman; honest, devoted woman, who will do service to the Querent; loving intelligence, and hence the gift of vision; success, happiness, pleasure; also wisdom, virtue; a perfect spouse and a good mother.",
+    reverse : "Reversed: The accounts vary; good woman; otherwise, distinguished woman but one not to be trusted; perverse woman; vice, dishonour, depravity.",
     category : "cups"
 
   },
   {
     name : "King of Cups",
     img : "images/tarot-cups-14.jpg",
-    description : "He holds a short sceptre in his left hand and a great cup in his right; his throne is set upon the sea; on one side a ship is riding and on the other a dolphin is leaping. The implicit is that the Sign of the Cup naturally refers to water, which appears in all the court cards. Divinatory Meanings: Fair man, man of business, law, or divinity; responsible, disposed to oblige the Querent; also equity, art and science, including those who profess science, law and art; creative intelligence. Reversed: Dishonest, double-dealing man; roguery, exaction, injustice, vice, scandal, pillage, considerable loss.",
+    description : "He holds a short sceptre in his left hand and a great cup in his right; his throne is set upon the sea; on one side a ship is riding and on the other a dolphin is leaping. The implicit is that the Sign of the Cup naturally refers to water, which appears in all the court cards. Divinatory Meanings: Fair man, man of business, law, or divinity; responsible, disposed to oblige the Querent; also equity, art and science, including those who profess science, law and art; creative intelligence.",
+    reverse : "Reversed: Dishonest, double-dealing man; roguery, exaction, injustice, vice, scandal, pillage, considerable loss.",
     category : "cups"
 
   },
   {
     name : "Death",
     img : "images/tarot-death.jpg",
-    description : "End, mortality, destruction, corruption also, for a man, the loss of a benefactor for a woman, many con­trarieties; for a maid, failure of marriage projects. Reversed: Inertia, sleep, lethargy, petrifaction, somnambulism; hope destroyed.",
+    description : "End, mortality, destruction, corruption also, for a man, the loss of a benefactor for a woman, many con­trarieties; for a maid, failure of marriage projects.",
+    reverse : "Reversed: Inertia, sleep, lethargy, petrifaction, somnambulism; hope destroyed.",
     category : "major"
 
   },
   {
     name : "The Devil",
     img : "images/tarot-devil.jpg",
-    description : "Ravage, violence, vehemence, extra­ordinary efforts, force, fatality; that which is predestined but is not for this reason evil. Reversed: Evil fatality, weakness, pettiness, blindness.",
+    description : "Ravage, violence, vehemence, extra­ordinary efforts, force, fatality; that which is predestined but is not for this reason evil.",
+    reverse : "Reversed: Evil fatality, weakness, pettiness, blindness.",
     category : "major"
 
   },
   {
     name : "The Emperor",
     img : "images/tarot-emperor.jpg",
-    description : "Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will. Reversed: Bene­volence, compassion, cre­dit; also con­fusion to enemies, obstruction, immaturity.",
+    description : "Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will.",
+    reverse : "Reversed: Bene­volence, compassion, cre­dit; also con­fusion to enemies, obstruction, immaturity.",
     category : "major"
 
   },
   {
     name : "The Empress",
     img : "images/tarot-empress.jpg",
-    description : "Fruitfulness, action, initiative, length of days; the unknown, clandestine; also difficulty, doubt, ignorance. Reversed: Light, truth, the unravelling of involved matters, public rejoicings; according to another reading, vacillation.",
+    description : "Fruitfulness, action, initiative, length of days; the unknown, clandestine; also difficulty, doubt, ignorance.",
+    reverse : "Reversed: Light, truth, the unravelling of involved matters, public rejoicings; according to another reading, vacillation.",
     category : "major"
 
   },
   {
     name : "The Fool",
     img : "images/tarot-fool.jpg",
-    description : "Folly, mania, extra­vagance, intoxication, delirium, frenzy, bewrayment. Reversed: Negligence, absence, distribution, care­lessness, apathy, nullity, vanity.",
+    description : "Folly, mania, extra­vagance, intoxication, delirium, frenzy, bewrayment.",
+    reverse : "Reversed: Negligence, absence, distribution, care­lessness, apathy, nullity, vanity.",
     category : "major"
 
   },
   {
     name : "The Hanged Man",
     img : "images/tarot-hangedman.jpg",
-    description : "Wisdom, circumspection, discernment, trials, sacrifice, intuition, divination, prophecy. Reversed: Selfishness, the crowd, body politic.",
+    description : "Wisdom, circumspection, discernment, trials, sacrifice, intuition, divination, prophecy.",
+    reverse : "Reversed: Selfishness, the crowd, body politic.",
     category : "major"
 
   },
   {
     name : "The Hermit",
     img : "images/tarot-hermit.jpg",
-    description : "Prudence, circum­spection; also and especially treason, dissimulation, roguery, corruption. Reversed: Concealment, dis­guise, policy, fear, unreasoned caution.",
+    description : "Prudence, circum­spection; also and especially treason, dissimulation, roguery, corruption.",
+    reverse : "Reversed: Concealment, dis­guise, policy, fear, unreasoned caution.",
     category : "major"
 
   },
   {
     name : "The Hierophant",
     img : "images/tarot-hierophant.jpg",
-    description : "Marriage, alliance, captivity, servitude; by another account, mercy and goodness; inspiration; the man to whom the Querent has recourse. Reversed: Society, good under­standing, concord, over­kindness, weakness.",
+    description : "Marriage, alliance, captivity, servitude; by another account, mercy and goodness; inspiration; the man to whom the Querent has recourse.",
+    reverse : "Reversed: Society, good under­standing, concord, over­kindness, weakness.",
     category : "major"
 
   },
   {
     name : "The High Priestess",
     img : "images/tarot-highpriestess.jpg",
-    description : "Secrets, mystery, the future as yet unrevealed; the woman who interests the Querent, if male; the Querent herself, if female; silence, tenacity; mystery, wis­dom, science. Reversed: Passion, moral or physical ardour, conceit, surface knowl­edge.",
+    description : "Secrets, mystery, the future as yet unrevealed; the woman who interests the Querent, if male; the Querent herself, if female; silence, tenacity; mystery, wis­dom, science.",
+    reverse : "Reversed: Passion, moral or physical ardour, conceit, surface knowl­edge.",
     category : "major"
 
   },
   {
     name : "Judgement",
     img : "images/tarot-judgement.jpg",
-    description : "Change of position, renewal, outcome. Another account specifies total loss though lawsuit. Reversed: Weakness, pusillanimity, simplicity; also delibe­ration, decision, sentence.",
+    description : "Change of position, renewal, outcome. Another account specifies total loss though lawsuit.",
+    reverse : "Reversed: Weakness, pusillanimity, simplicity; also delibe­ration, decision, sentence.",
     category : "major"
 
   },
   {
     name : "Justice",
     img : "images/tarot-justice.jpg",
-    description : "Equity, rightness, probity, executive; triumph of the deserving side in law. Reversed: Law in all its depart­ments, legal complications, bigotry, bias, excessive severity.",
+    description : "Equity, rightness, probity, executive; triumph of the deserving side in law.",
+    reverse : "Reversed: Law in all its depart­ments, legal complications, bigotry, bias, excessive severity.",
     category : "major"
 
   },
   {
     name : "The Lovers",
     img : "images/tarot-lovers.jpg",
-    description : "Attraction, love, beauty, trials overcome. Reversed: Failure, foolish designs. Another account speaks of marriage frustrated and contrarieties of all kinds.",
+    description : "Attraction, love, beauty, trials overcome.",
+    reverse : "Reversed: Failure, foolish designs. Another account speaks of marriage frustrated and contrarieties of all kinds.",
     category : "major"
 
   },
   {
     name : "The Magician",
     img : "images/tarot-magician.jpg",
-    description : "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male. Reversed: Physician, Magus, mental disease, disgrace, disquiet.",
+    description : "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
+    reverse : "Reversed: Physician, Magus, mental disease, disgrace, disquiet.",
     category : "major"
 
   },
   {
     name : "The Moon",
     img : "images/tarot-moon.jpg",
-    description : "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error. Reversed: Instability, inconstancy, silence, lesser degrees of deception and error.",
+    description : "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error.",
+    reverse : "Reversed: Instability, inconstancy, silence, lesser degrees of deception and error.",
     category : "major"
 
   },
   {
     name : "Ace of Pentacles",
     img : "images/tarot-pentacles-01.jpg",
-    description : "A hand - issuing, as usual, from a cloud - holds up a pentacle. Divinatory Meanings: Perfect contentment, felicity, ecstasy; also speedy intelligence; gold. Reversed: The evil side of wealth, bad intelligence; also great riches. In any case it shews prosperity, comfortable material conditions, but whether these are of advantage to the possessor will depend on whether the card is reversed or not.",
+    description : "A hand - issuing, as usual, from a cloud - holds up a pentacle. Divinatory Meanings: Perfect contentment, felicity, ecstasy; also speedy intelligence; gold.",
+    reverse : "Reversed: The evil side of wealth, bad intelligence; also great riches. In any case it shews prosperity, comfortable material conditions, but whether these are of advantage to the possessor will depend on whether the card is reversed or not.",
     category : "pentacles"
 
   },
   {
     name : "Two of Pentacles",
     img : "images/tarot-pentacles-02.jpg",
-    description : "A young man, in the act of dancing, has a pentacle in either hand, and they are joined by that endless cord which is like the number 8 reversed. Divinatory Meanings: On the one hand it is represented as a card of gaiety, recreation and its connexions, which is the subject of the design; but it is read also as news and messages in writing, as obstacles, agi­tation, trouble, embroilment. Reversed: Enforced gaiety, simulated enjoyment, literal sense, handwriting, composition, letters of exchange.",
+    description : "A young man, in the act of dancing, has a pentacle in either hand, and they are joined by that endless cord which is like the number 8 reversed. Divinatory Meanings: On the one hand it is represented as a card of gaiety, recreation and its connexions, which is the subject of the design; but it is read also as news and messages in writing, as obstacles, agi­tation, trouble, embroilment.",
+    reverse : "Reversed: Enforced gaiety, simulated enjoyment, literal sense, handwriting, composition, letters of exchange.",
     category : "pentacles"
 
   },
@@ -401,13 +433,13 @@ function displayImg() {
   if(calledOneTime === false || (buttonClick % 2 !== 0)) {
         calledOneTime = true;
         $(".default").append("<img src=" + result.img + ">").hide().fadeIn(2000);
-        $(".name").append("<p>" + result.name + "</p>");
-        $(".description").append("<p>" + result.description + "</p>");
+        $(".name").append("<p>" + result.name + "</p>").hide().slideDown();
+        $(".description").append("<p>" + result.description + "</p>").hide().slideDown();
         console.log("clicked odd" + buttonClick);
     }else {
         $(".default img").fadeOut();
-        $(".name p").fadeOut();
-        $(".description p").fadeOut();
+        $(".name p").slideUp();
+        $(".description p").slideUp();
         console.log("clicked even- hide" + buttonClick);
     }
 
