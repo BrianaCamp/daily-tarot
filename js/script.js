@@ -351,7 +351,7 @@ var arrayOfCards = [
     name : "The Star",
     img : "images/tarot-star.jpg",
     description : "Loss, theft, privation, abandonment; another reading says-hope and bright prospects.",
-    reverse : "Reversed: Arrogance, haughtiness, impotence.",    
+    reverse : "Reversed: Arrogance, haughtiness, impotence.",
     category : "major"
 
   },
@@ -359,7 +359,7 @@ var arrayOfCards = [
     name : "Strength",
     img : "images/tarot-strength.jpg",
     description : "Power, energy, action, courage, magnanimity; also complete success and honours.",
-    reverse : "Reversed: Despotism, abuse if power, weakness, discord, sometimes even disgrace.",    
+    reverse : "Reversed: Despotism, abuse if power, weakness, discord, sometimes even disgrace.",
     category : "major"
 
   },
@@ -367,7 +367,7 @@ var arrayOfCards = [
     name : "The Sun",
     img : "images/tarot-sun.jpg",
     description : "Material happiness, fortunate marriage, contentment.",
-    reverse : "Reversed: The same in a lesser sense.",  
+    reverse : "Reversed: The same in a lesser sense.",
     category : "major"
 
   },
@@ -375,7 +375,7 @@ var arrayOfCards = [
     name : "Ace of Swords",
     img : "images/tarot-swords-01.jpg",
     description : "A hand issues from a cloud, grasping as word, the point of which is encircled by a crown. Divinatory Meanings: Triumph, the excessive degree in everything, conquest, triumph of force. It is a card of great force, in love as well as in hatred. The crown may carry a much higher significance than comes usually within the sphere of fortune-telling.",
-    reverse : "Reversed: The same, but the results are disastrous; another account says - conception, childbirth, augmentation, multiplicity.",  
+    reverse : "Reversed: The same, but the results are disastrous; another account says - conception, childbirth, augmentation, multiplicity.",
     category : "swords"
 
   },
@@ -628,9 +628,11 @@ var arrayOfCards = [
   },
   ];
 
+
 var calledOneTime = false;
 var buttonClick = 0;
 var result;
+
 
 function buttonCount(){
 buttonClick = buttonClick + 1;
@@ -643,17 +645,40 @@ function pickCard() {
   console.log(result.img);
 
 }
+function flipCard() {
+
+  $(".card").flip({
+    axis: 'y',
+    trigger : 'manual',
+    speed : 500
+  });
+  $(".card").flip(true);
+
+}
 
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
-  if(calledOneTime === false || (buttonClick % 2 !== 0)) {
+var cardImage = "<img src=" + result.img + ">",
+    cardName = "<p>" + result.name + "</p>",
+    cardDescription = "<p>" + result.description + "</p>";
+
+  if(calledOneTime === false && (buttonClick % 2 !== 0)) {
         calledOneTime = true;
-        $(".card").append("<img src=" + result.img + ">").hide().fadeIn(2000);
-        $(".name").append("<p>" + result.name + "</p>").hide().slideDown();
-        $(".description").append("<p>" + result.description + "</p>").hide().slideDown();
+        $(".back").append(cardImage).show();
+        flipCard();
+        $(".name").append(cardName).hide().slideDown();
+        $(".description").append(cardDescription).hide().slideDown();
         console.log("clicked odd" + buttonClick);
-    } else {
-        $(".card img").fadeOut();
+    } else if (calledOneTime === true && (buttonClick % 2 !== 0)) {
+      flipCard();
+      $(".back img").replaceWith(cardImage);
+      $(".name").append(cardName).hide().slideDown();
+      $(".description").append(cardDescription).hide().slideDown();
+      console.log("else if called" + buttonClick);
+    }
+    else {
+        $(".front").show();
+        $(".card").flip(false);
         $(".name p").slideUp();
         $(".description p").slideUp();
         console.log("clicked even- hide" + buttonClick);
@@ -661,23 +686,31 @@ function displayImg() {
 
 }
 
-//rotate the card if true
 
+
+//rotate the card if true
 function rotateCard() {
   var rotate = [true, false];
   rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
   console.log(rotate);
   if (rotate === true) {
-    $(".default img").addClass("rotate");
+    $(".back img").addClass("rotate");
   }
+
 }
 
-//when the button is clicked, run the buttonCount, pickCard, and displayImg
+
+//when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
 $("button").click(function(){
   buttonCount();
   pickCard();
   displayImg();
   rotateCard();
+
+
 });
+
+
+
 });

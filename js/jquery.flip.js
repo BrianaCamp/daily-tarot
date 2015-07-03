@@ -45,7 +45,7 @@
           trigger: "click",
           speed: 500
         }, options );
-        
+
         // save reverse and axis css to DOM for performing flip
         $dom.data("reverse", settings.reverse);
         $dom.data("axis", settings.axis);
@@ -117,5 +117,5 @@
 
     return this;
   };
- 
+
 }( jQuery ));

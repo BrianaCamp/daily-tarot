@@ -12,7 +12,6 @@ nav img {
   margin-bottom: 30px;
 }
 .card {
-  background-image: url('images/daily-tarot-logov3.svg');
   background-size: 57px;
   width: 400px;
   height: 536px;
@@ -20,6 +19,8 @@ nav img {
   border: solid black 2px;
   margin: 0 auto;
 }
+
+
 
 img {
   width: 360px;
