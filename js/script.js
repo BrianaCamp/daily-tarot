@@ -424,20 +424,40 @@ function pickCard() {
   console.log(result.img);
 
 }
+function flipCard() {
 
+  $(".card").flip({
+    axis: 'y',
+    trigger : 'manual',
+    speed : 500
+  });
+  $(".card").flip(true);
 
-
+}
 
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
-  if(calledOneTime === false || (buttonClick % 2 !== 0)) {
+var cardImage = "<img src=" + result.img + ">",
+    cardName = "<p>" + result.name + "</p>",
+    cardDescription = "<p>" + result.description + "</p>";
+
+  if(calledOneTime === false && (buttonClick % 2 !== 0)) {
         calledOneTime = true;
-        $(".default").append("<img src=" + result.img + ">").hide().fadeIn(2000);
-        $(".name").append("<p>" + result.name + "</p>").hide().slideDown();
-        $(".description").append("<p>" + result.description + "</p>").hide().slideDown();
+        $(".back").append(cardImage).show();
+        flipCard();
+        $(".name").append(cardName).hide().slideDown();
+        $(".description").append(cardDescription).hide().slideDown();
         console.log("clicked odd" + buttonClick);
-    }else {
-        $(".default img").fadeOut();
+    } else if (calledOneTime === true && (buttonClick % 2 !== 0)) {
+      flipCard();
+      $(".back img").replaceWith(cardImage);
+      $(".name").append(cardName).hide().slideDown();
+      $(".description").append(cardDescription).hide().slideDown();
+      console.log("else if called" + buttonClick);
+    }
+    else {
+        $(".front").show();
+        $(".card").flip(false);
         $(".name p").slideUp();
         $(".description p").slideUp();
         console.log("clicked even- hide" + buttonClick);
@@ -445,16 +465,19 @@ function displayImg() {
 
 }
 
+
+
 //rotate the card if true
 function rotateCard() {
   var rotate = [true, false];
   rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
   console.log(rotate);
   if (rotate === true) {
-    $(".default img").addClass("rotate");
+    $(".back img").addClass("rotate");
   }
 
 }
+
 
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
@@ -463,6 +486,7 @@ $("button").click(function(){
   pickCard();
   displayImg();
   rotateCard();
+
 
 });
 
