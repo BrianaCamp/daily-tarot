@@ -47,7 +47,6 @@ section {
 body {
   font-family: 'tk-aktiv-grotesk-std', sans-serif;
   background: #fdfdf9;
-  box-sizing: border-box;
 }
 
 #logo {
@@ -107,6 +106,13 @@ button {
   border: none;
   padding: 20px 44px;
   margin-top: 20px;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+button:focus {
+  outline: none;
 }
 
 .rotate {
