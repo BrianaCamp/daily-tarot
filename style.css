@@ -39,16 +39,35 @@ section {
   border: 0;
 }
 
+body {
+  position: relative;
+  font-family: 'tk-aktiv-grotesk-std', sans-serif;
+  background: #fdfdf9;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 .wrapper {
   text-align: center;
   width:100%;
 }
 
-body {
-  font-family: 'tk-aktiv-grotesk-std', sans-serif;
-  background: #fdfdf9;
+a {
+  color: #F6638B;
+  text-decoration: none;
 }
 
+a:visited{
+  color:#000;
+}
+
+a:hover {
+  color: #83cdb9;
+}
 #logo {
   height: 95px;
   width: 274px;
@@ -63,10 +82,14 @@ body {
 
 }
 
+.card-wrapper {
+  margin-bottom: 10%;
+}
+
 .card {
   padding: 10px;
-/*  background-image: url("images/tarotcardspread.jpg");
-  background-repeat: no-repeat;*/
+/* background-image: url("images/tarotcardspread.jpg"); */
+  /* background-repeat: no-repeat; */
   width: 100%;
   height: 547px;
 /*  border: solid black 2px;
@@ -77,8 +100,6 @@ body {
   width: 320px;
   height: 527px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
 }
 
@@ -97,7 +118,7 @@ body {
   padding: 10px 0;
 }
 
-button {
+.fateButton {
   background-color: #F6638B;
   color: #fdfdf9;
   text-transform: uppercase;
@@ -106,12 +127,13 @@ button {
   border: none;
   padding: 20px 44px;
   margin-top: 20px;
+  margin-bottom: 10%;
 }
-button:hover {
+.fateButton:hover {
   opacity: 0.7;
 }
 
-button:focus {
+.fateButton:focus {
   outline: none;
 }
 
@@ -120,4 +142,70 @@ button:focus {
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
+}
+
+
+.reversed {
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 13px;
+  text-align: left;
+  position: absolute;
+}
+
+
+@media (min-width: 768px) {
+  .card-wrapper {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: space-around;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+
+  .card {
+    width: 25%;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+            margin: 0;
+  }
+
+  .fateButton {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+            margin: 0;
+            width:20%;
+
+  }
+
+  .description-wrapper {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+            width: 30%;
+  }
 }
