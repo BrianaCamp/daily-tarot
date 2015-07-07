@@ -628,11 +628,22 @@ var arrayOfCards = [
   ];
 
 
+    // $.ajaxSetup({ cache: true });
+    // $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
+    //   FB.init({
+    //     appId: '166957156723662',
+    //     version: 'v2.3' // or v2.0, v2.1, v2.0
+    //   });
+    //   $('#loginbutton,#feedbutton').removeAttr('disabled');
+    //   FB.getLoginStatus(updateStatusCallback);
+    // });
+
+
 var calledOneTime = false;
 var buttonClick = 0;
 var result;
 
-
+//count the number of times the button is clicked
 function buttonCount(){
 buttonClick = buttonClick + 1;
     console.log(buttonClick);
@@ -645,6 +656,8 @@ function pickCard() {
   console.log(result.img);
 
 }
+
+//flip card functionality
 function flipCard() {
 
   $(".card").flip({
@@ -661,15 +674,15 @@ function displayImg() {
 var cardImage = "<img src=" + result.img + ">",
     cardName = "<p>" + result.name + "</p>",
     cardDescription = "<p>" + result.description + "</p>";
-    
+
   if(calledOneTime === false && (buttonClick % 2 !== 0)) {
         calledOneTime = true;
 
         $(".back").append(cardImage).show();
         flipCard();
-        $(".name").append(cardName).hide().slideDown(); 
+        $(".name").append(cardName).hide().slideDown();
         $(".description").append(cardDescription).hide().slideDown();
-    
+
           console.log("first click " + buttonClick);
 
     } else if (calledOneTime === true && (buttonClick % 2 !== 0)) {
@@ -691,7 +704,7 @@ var cardImage = "<img src=" + result.img + ">",
 //rotate the card if true
 function rotateCard() {
   var rotate = [true, false],
-  cardRevDescript = "<p> <b>Reversed: </b>" + result.reverse + "</p>";
+  cardRevDescript = "<p> <span class='reversed'>Reversed: </span>" + result.reverse + "</p>";
 
   rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
   console.log(rotate);
@@ -701,12 +714,18 @@ function rotateCard() {
   }
 }
 
+//facebook share
+function faceBookShare() {
+  $("").insertAfter(".fateButton");
+}
+
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
-$("button").click(function(){
+$(".fateButton").click(function(){
   buttonCount();
   pickCard();
   displayImg();
   rotateCard();
+  faceBookShare();
 });
 });
