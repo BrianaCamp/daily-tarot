@@ -3,12 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title"
+  content="What's your daily tarot?" />
+  <meta property="og:site_name" content="The Daily Tarot"/>
+  <meta property="og:url"
+  href="http://localhost8080" />
+<meta property="og:description" content="Daily Tarot Description" />
+<meta property="fb:app_id" content="937580106306543" />
+<meta property="og:type" content="quiz" />
+
+
   <title>Daily Tarot</title>
   <script src="//use.typekit.net/mxj1mxm.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.flip.js"></script>
+  <!--facebook initilization-->
+
+  <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         appId      : '937580106306543',
+         xfbml      : true,
+         version    : 'v2.4'
+       });
+       FB.ui({
+       method: 'share',
+       action_type: 'daily-tarot:share',
+       action_properties: JSON.stringify({
+        'quiz': {
+          'og:type' : 'quiz',
+          'og:url' : "http://localhost8080",
+          'og:title' : "I got the " + result.name + "!",
+          'og:image' : result.img
+        }
+       })
+       },
+       function(){});
+     };
+
+     (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+
+
+
+
+   </script>
+   <!--end initilization-->
+
+
+   <!--share button functionality-->
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=166957156723662";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+
+</script>
+
   <div class="wrapper">
       <nav class="topnav">
         <img src="images/dailytarotlogo.png" id="logo" alt="Daily Tarot">
@@ -33,8 +101,11 @@
     </div>
 
       <button class="fateButton">Fate Awaits</button>
+      <div class="fb-share-button" data-href="http://brianacamp.github.io/daily-tarot" data-layout="button"></div>
+
 
     </div>
+
     <footer>
       <p>
         Designed and developed by <a href="http://brianacamp.github.io" target="_blank">Bri Camp</a> and <a href="http://www.icuthy.com" target="_blank">Ingrid Cuthbert</a>.
@@ -43,8 +114,6 @@
     </footer>
   </div>
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery.flip.js"></script>
+
 </body>
 </html>
