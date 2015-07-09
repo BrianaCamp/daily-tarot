@@ -7,7 +7,7 @@
   content="What's your daily tarot?" />
   <meta property="og:site_name" content="The Daily Tarot"/>
   <meta property="og:url"
-  href="http://localhost8080" />
+  href="http://brianacamp.github.io/daily-tarot" />
 <meta property="og:description" content="Daily Tarot Description" />
 <meta property="fb:app_id" content="937580106306543" />
 <meta property="og:type" content="quiz" />
@@ -20,9 +20,7 @@
 
 </head>
 <body>
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/jquery.flip.js"></script>
+
   <!--facebook initilization-->
 
   <script>
@@ -34,11 +32,11 @@
        });
        FB.ui({
        method: 'share',
-       action_type: 'daily-tarot:share',
+       action_type: 'the_daily_tarot:share',
        action_properties: JSON.stringify({
         'quiz': {
           'og:type' : 'quiz',
-          'og:url' : "http://localhost8080",
+          'og:url' : "http://brianacamp.github.io/daily-tarot",
           'og:title' : "I got the " + result.name + "!",
           'og:image' : result.img
         }
@@ -114,6 +112,8 @@
     </footer>
   </div>
 
-
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.flip.js"></script>
 </body>
 </html>
