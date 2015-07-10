@@ -71,7 +71,7 @@ a:hover {
 #logo {
   height: 95px;
   width: 274px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .topnav {
   height: 100px;
