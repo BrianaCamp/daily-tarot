@@ -8,9 +8,9 @@
   <meta property="og:site_name" content="The Daily Tarot"/>
   <meta property="og:url"
   href="http://brianacamp.github.io/daily-tarot" />
-<meta property="og:description" content="Daily Tarot Description" />
-<meta property="fb:app_id" content="937580106306543" />
-<meta property="og:type" content="quiz" />
+  <meta property="og:description" content="Daily Tarot Description" />
+  <meta property="fb:app_id" content="937580106306543" />
+  <meta property="og:type" content="quiz" />
 
 
   <title>Daily Tarot</title>
@@ -22,7 +22,6 @@
 <body class="Site">
 
   <!--facebook initilization-->
-
   <script>
      window.fbAsyncInit = function() {
        FB.init({
@@ -53,62 +52,57 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
-   </script>
-   <!--end initilization-->
-
+   </script>   <!--end initilization-->
 
    <!--share button functionality-->
    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=166957156723662";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=166957156723662";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 <main class="Site-content">
-  <div class="wrapper">
+  
       <nav class="topnav">
         <img src="images/dailytarotlogo.png" id="logo" alt="Daily Tarot">
       </nav>
+    <div class="wrapper">
     <div class="card-wrapper">
-
       <section class="card">
         <div class="front">
           <!--card face down-->
           <p class="fateButtonHover">fate awaits</p>
-
-              <img src="images/tarotback.jpg" class="fateButton" alt="tarot card spread">
-
+            <img src="images/tarotback.jpg" class="fateButton" alt="tarot card back">
         </div>
-        <div class="back fateButton">
-          
+        <div class="back fateButton">   
           <!--card face up-->
         </div>
       </section>
+    </div>    <!-- end card wrapper -->
 
-    <div class="description-wrapper">
-
+    <div class="description-wrapper aligner">
+      <div class="align-item">
       <section class="name">
       </section>
-
       <section class="description">
       </section>
-    </div>
+      </div>
+    </div>     <!-- end wrapper -->
 
-      <div class="fb-share-button" data-href="http://brianacamp.github.io/daily-tarot" data-layout="button"></div>
+  </div> 
+</main>
+<footer>
+  <p>
+    Designed and developed by <a href="http://brianacamp.github.io" target="_blank">Bri Camp</a> and <a href="http://www.icuthy.com" target="_blank">Ingrid Cuthbert</a>.
+  </p>
 
-    </div>
-    </div>
-    </main>
-    <footer>
-      <p>
-        Designed and developed by <a href="http://brianacamp.github.io" target="_blank">Bri Camp</a> and <a href="http://www.icuthy.com" target="_blank">Ingrid Cuthbert</a>.
-      </p>
+   <div class="fb-share-button" data-href="http://brianacamp.github.io/daily-tarot" data-layout="button"><p>I'm here</p></div>
 
-    </footer>
+</footer>
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/script.js"></script>
