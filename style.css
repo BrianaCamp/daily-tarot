@@ -48,12 +48,14 @@ body {
 *,
 :after,
 :before {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .wrapper {
-  text-align: center;
   width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 a {
@@ -79,11 +81,13 @@ a:hover {
   margin-bottom: 30px;
   background: #fdfdf9;
   box-shadow: 0 2px 3px 0 rgba(158,158,158,.15);
-
+  text-align: center;
 }
 
 .card-wrapper {
+  width: 100%;
   margin-bottom: 10%;
+  text-align: center;
 }
 
 .card {
@@ -92,8 +96,7 @@ a:hover {
   /* background-repeat: no-repeat; */
   width: 100%;
   height: 547px;
-/*  border: solid black 2px;
-*/  margin: 0 auto;
+  margin: 0 auto;
 }
 
 .back img, .front img {
@@ -103,7 +106,13 @@ a:hover {
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
 }
 
-.name p {
+.description-wrapper {
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.name h2 {
   text-transform: uppercase;
   font-size: 1.5em;
   color: #83cdb9;
@@ -112,26 +121,14 @@ a:hover {
 }
 
 .description p{
-  width: 60%;
+  width: 75%;
   display: inline-block;
   line-height: 1.4em;
   padding: 10px 0;
 }
 
-.fateButton {
-  background-color: #F6638B;
-  color: #fdfdf9;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  border: none;
-  padding: 20px 44px;
-  margin-top: 20px;
-  margin-bottom: 10%;
-  font-family: "aktiv-grotesk-std", sans-serif;
-}
-.fateButton:hover {
-  opacity: 0.7;
+.fateButtonHover {
+  display:none;
 }
 
 .fateButton:focus {
@@ -145,68 +142,67 @@ a:hover {
     -ms-transform: rotate(180deg);
 }
 
-
 .reversed {
   font-weight: bold;
+}
+
+footer {
+  height: 100px;
+/*  border-top: 1px solid #DDD;
+*/  margin: 0 10px;
+  box-shadow: 2px 0 3px 0 rgba(158,158,158,.15);
+
 }
 
 footer p {
   font-size: 13px;
   text-align: left;
-  position: absolute;
 }
 
+/*flexbox sticky footer*/
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
 
 @media (min-width: 768px) {
-  .card-wrapper {
 
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: space-around;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: space-around;
-            justify-content: space-around;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
+.wrapper {
+  width: 80%;
+  margin-bottom: 10%;
+  text-align:left;
+  min-height: 555px;
+  margin: 0 auto;
+}
 
-  .card {
-    width: 25%;
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-            margin: 0;
-  }
+.card-wrapper {
+  width: 50%;
+  min-height: 530px;
+}
 
-  .fateButton {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-            margin: 0;
-            width:20%;
+.description-wrapper {
+  width: 50%;
+  padding-bottom: 20px;
+  min-height: 530px;
+}
 
-  }
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .description-wrapper {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3;
-            width: 30%;
-  }
+}
+@media (min-width: 1224px) {
+
+.wrapper {
+  width: 60%;
+}
+
 }

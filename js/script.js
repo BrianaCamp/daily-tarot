@@ -70,7 +70,7 @@ var arrayOfCards = [
     name : "Eight of Cups",
     img : "images/tarot-cups-08.jpg",
     description : "A man of dejected aspect is deserting the cups of his felicity, enterprise, undertaking or previous concern. Divinatory Meanings: The card speaks for itself on the surface, but other readings are entirely antithetical - giving joy, mildness, timidity, honour, modesty. In practice, it is usually found that the card shews the decline of a matter, or that a matter which has been thought to be important is really of slight consequence - either for good or evil. Great joy, happiness, feasting.",
-    reverse : "",
+    reverse : "Great joy, happiness, feasting.",
     category : "cups"
 
   },
@@ -672,7 +672,7 @@ function flipCard() {
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
 var cardImage = "<img src=" + result.img + ">",
-    cardName = "<p>" + result.name + "</p>",
+    cardName = "<h2>" + result.name + "</h2>",
     cardDescription = "<p>" + result.description + "</p>";
 
   if(calledOneTime === false && (buttonClick % 2 !== 0)) {
@@ -695,7 +695,7 @@ var cardImage = "<img src=" + result.img + ">",
     else {
         $(".front").show();
         $(".card").flip(false);
-        $(".name p").slideUp();
+        $(".name h2").slideUp();
         $(".description p").slideUp();
         console.log("clicked even- hide " + buttonClick);
     }
@@ -714,10 +714,22 @@ function rotateCard() {
   }
 }
 
-//facebook share
-function faceBookShare() {
-  $("").insertAfter(".fateButton");
-}
+$("div.front").mouseover(function(event){
+  event.stopPropagation();
+  $("div.front p").toggleClass("fateButtonHover");
+
+});
+
+$("div.front").mouseleave(function(){
+  $("div.front p").toggleClass("fateButtonHover");
+});
+
+
+
+// //facebook share
+// function faceBookShare() {
+//   $("").insertAfter(".fateButton");
+// }
 
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
