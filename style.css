@@ -149,10 +149,29 @@ a:hover {
   font-weight: bold;
 }
 
+footer {
+  height: 100px;
+/*  border-top: 1px solid #DDD;
+*/  margin: 0 10px;
+  box-shadow: 2px 0 3px 0 rgba(158,158,158,.15);
+
+}
+
 footer p {
   font-size: 13px;
   text-align: left;
-  position: absolute;
+}
+
+/*flexbox sticky footer*/
+
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
 }
 
 
