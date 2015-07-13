@@ -10,7 +10,8 @@
   href="http://brianacamp.github.io/daily-tarot" />
   <meta property="og:description" content="Daily Tarot Description" />
   <meta property="fb:app_id" content="937580106306543" />
-  <meta property="og:type" content="quiz" />
+  <meta property="og:image" content="http://s5.favim.com/orig/54/cute-kitty-lovely-Favim.com-520357.jpg">
+  <meta property="og:type" content="article" />
 
 
   <title>Daily Tarot</title>
@@ -33,11 +34,10 @@
        method: 'share',
        action_type: 'the_daily_tarot:share',
        action_properties: JSON.stringify({
-        'quiz': {
-          'og:type' : 'quiz',
+        'article': {
+          'og:type' : 'article',
           'og:url' : "http://brianacamp.github.io/daily-tarot",
-          'og:title' : "I got the " + result.name + "!",
-          'og:image' : result.img
+          'og:image' : "http://s5.favim.com/orig/54/cute-kitty-lovely-Favim.com-520357.jpg"
         }
        })
        },
