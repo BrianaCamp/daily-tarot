@@ -152,9 +152,6 @@ a:hover {
   padding: 10px 0;
 }
 
-.fateButtonHover {
-  display:none;
-}
 
 .fateButton:focus {
   outline: none;

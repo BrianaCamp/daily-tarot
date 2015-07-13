@@ -715,20 +715,6 @@ function rotateCard() {
 }
 
 
-//show fate awaits when hover over image and arc text
-$("div.front img").mouseover(function(event){
-  event.stopPropagation();
-  $("div.front p").hide().show().arctext({radius: 150, rotate: true}).toggleClass("fateButtonHover").hide().fadeIn(1000);
-
-});
-
-//hide the paragraph when mouseleaves the image
-
-$("div.front").mouseleave(function(){
-  $("div.front p").toggleClass("fateButtonHover").show().fadeOut(1000);
-});
-
-
 
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
