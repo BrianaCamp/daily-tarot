@@ -145,6 +145,7 @@ a:hover {
 
 h1 {
   text-transform: uppercase;
+  color: #40f8b1;
 }
 
 .greeting {
@@ -183,7 +184,9 @@ h1 {
   line-height: 1.4em;
   padding: 10px 0;
 }
-
+.category-image, .name, .description {
+  width: 350px;
+}
 
 .fateButton:focus {
   outline: none;
@@ -200,18 +203,28 @@ h1 {
   font-weight: bold;
 }
 
-/*sticky footer*/
-
 footer {
   height: 100px;
+  width: 100%;
 /*  border-top: 1px solid #DDD;
-*/  margin: 0 10px;
+*/margin: 0 10px;
   box-shadow: 2px 0 3px 0 rgba(158,158,158,.15);
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 footer p {
   font-size: 13px;
   text-align: left;
+  text-transform: uppercase;
+  padding: 30px 20px 20px 20px;
+  display: inline-block;
+}
+
+.logoicon {
+ width: 35px;
+margin: 10px;
 }
 
 .site {

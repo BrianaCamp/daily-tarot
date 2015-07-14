@@ -1,4 +1,3 @@
-//have an array of objects, the objects will be the images and descriptions
 var arrayOfCards = [
   {
     name : "The Chariot",

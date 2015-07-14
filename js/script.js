@@ -32,16 +32,16 @@ $(document).ready(function(){
     $(".back img").remove();
     $(".category-image img").remove();
     $(".back").append(html.img).show();
-    $(".name").append(html.name).hide().slideDown();
-    $(".description").append(html.description).hide().slideDown();
-    $(".category-image").append(html.category).hide().slideDown();
+    $(".category-image").append(html.category).hide().slideDown(2000);
+    $(".name").append(html.name).hide().slideDown(2000);
+    $(".description").append(html.description).hide().slideDown(2000);
 
   }
 
   function cardToHtml(card) {
     return {
-      name : "<h2>" + card.name + "</h2>",
       img : "<img src=" + card.img + ">",
+      name : "<h2>" + card.name + "</h2>",
       description : "<p>" + card.description + "</p>",
       category : "<img src='images/" + card.category + ".svg'" + "alt='" + card.category + "'>"
     };
@@ -61,12 +61,7 @@ $(document).ready(function(){
       $(".description p").slideUp();
       $(".category-image img").hide();
     }
-
-
   }
-
-  // $(".category-image img").removeClass("selected");
-  // $(".category-image").children("img."+ result.category).addClass("selected");
 
   //rotate the card if true
   function rotateCard() {
