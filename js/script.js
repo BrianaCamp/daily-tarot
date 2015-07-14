@@ -14,8 +14,7 @@ $(document).ready(function(){
   function pickCard() {
     result = (arrayOfCards[Math.floor(Math.random() * arrayOfCards.length)]);
     console.log(result.img);
-    $(".category-image img").removeClass("selected");
-    $(".category-image").children("img."+result.category).addClass("selected");
+
   }
 
   //flip card functionality
@@ -31,16 +30,20 @@ $(document).ready(function(){
   function putCardInDOM(card) {
     var html = cardToHtml(card);
     $(".back img").remove();
+    $(".category-image img").remove();
     $(".back").append(html.img).show();
     $(".name").append(html.name).hide().slideDown();
     $(".description").append(html.description).hide().slideDown();
+    $(".category-image").append(html.category).hide().slideDown();
+
   }
 
   function cardToHtml(card) {
     return {
       name : "<h2>" + card.name + "</h2>",
       img : "<img src=" + card.img + ">",
-      description: "<p>" + card.description + "</p>"
+      description : "<p>" + card.description + "</p>",
+      category : "<img src='images/" + card.category + ".svg'" + "alt='" + card.category + "'>"
     };
   }
 
@@ -50,15 +53,20 @@ $(document).ready(function(){
     if(buttonClick % 2) {
       putCardInDOM(result);
       flipCard();
+      $(".category-image img.selected").show();
     } else {
       $(".front").show();
       $(".card").flip(false);
       $(".name h2").slideUp();
       $(".description p").slideUp();
+      $(".category-image img").hide();
     }
 
-    $(".category-image img.selected").show();
+
   }
+
+  // $(".category-image img").removeClass("selected");
+  // $(".category-image").children("img."+ result.category).addClass("selected");
 
   //rotate the card if true
   function rotateCard() {

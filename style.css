@@ -143,10 +143,6 @@ h1 {
   display: block;
 }
 
-.category-image img {
-  display: none;
-}
-
 .back img, .front img {
   width: 320px;
   height: 527px;
@@ -198,16 +194,12 @@ footer {
 /*  border-top: 1px solid #DDD;
 */  margin: 0 10px;
   box-shadow: 2px 0 3px 0 rgba(158,158,158,.15);
-
-
 }
 
 footer p {
   font-size: 13px;
   text-align: left;
 }
-
-
 
 .site {
   display: -webkit-box;
