@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var calledOneTime = false;
+
 var buttonClick = 0;
 var result;
 
@@ -35,7 +35,6 @@ function putCardInDOM(card) {
   var html = cardToHtml(card);
   $(".back img").remove();
   $(".back").append(html.img).show();
-  flipCard();
   $(".name").append(html.name).hide().slideDown();
   $(".description").append(html.description).hide().slideDown();
 }
@@ -50,19 +49,16 @@ function cardToHtml(card) {
 
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
-  if(!calledOneTime && (buttonClick % 2 !== 0)) {
-    calledOneTime = true;
+  if(buttonClick % 2 !== 0) {
     putCardInDOM(result);
-  } else if (calledOneTime && (buttonClick % 2 !== 0)) {
-      flipCard();
-      putCardInDOM(result);
+    flipCard();
     }
     else {
         $(".front").show();
         $(".card").flip(false);
         $(".name h2").slideUp();
         $(".description p").slideUp();
-        console.log("clicked even- hide " + buttonClick);
+
     }
     $(".category-image img.selected").show();
 }
