@@ -65,8 +65,6 @@ $(document).ready(function(){
 
   }
 
-  // $(".category-image img").removeClass("selected");
-  // $(".category-image").children("img."+ result.category).addClass("selected");
 
   //rotate the card if true
   function rotateCard() {
