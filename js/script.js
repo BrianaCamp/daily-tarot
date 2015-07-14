@@ -628,16 +628,6 @@ var arrayOfCards = [
   ];
 
 
-    // $.ajaxSetup({ cache: true });
-    // $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
-    //   FB.init({
-    //     appId: '166957156723662',
-    //     version: 'v2.3' // or v2.0, v2.1, v2.0
-    //   });
-    //   $('#loginbutton,#feedbutton').removeAttr('disabled');
-    //   FB.getLoginStatus(updateStatusCallback);
-    // });
-
 
 var calledOneTime = false;
 var buttonClick = 0;
@@ -654,7 +644,8 @@ buttonClick = buttonClick + 1;
 function pickCard() {
   result = (arrayOfCards[Math.floor(Math.random() * arrayOfCards.length)]);
   console.log(result.img);
-
+  $(".category-image img").removeClass("selected");
+  $(".category-image").children("img."+result.category).addClass("selected");
 }
 
 //flip card functionality
@@ -675,7 +666,7 @@ var cardImage = "<img src=" + result.img + ">",
     cardName = "<h2>" + result.name + "</h2>",
     cardDescription = "<p>" + result.description + "</p>";
 
-  if(calledOneTime === false && (buttonClick % 2 !== 0)) {
+  if(!calledOneTime && (buttonClick % 2 !== 0)) {
         calledOneTime = true;
 
         $(".back").append(cardImage).show();
@@ -685,7 +676,7 @@ var cardImage = "<img src=" + result.img + ">",
 
           console.log("first click " + buttonClick);
 
-    } else if (calledOneTime === true && (buttonClick % 2 !== 0)) {
+    } else if (calledOneTime && (buttonClick % 2 !== 0)) {
       flipCard();
       $(".back img").replaceWith(cardImage);
       $(".name").append(cardName).hide().slideDown();
@@ -699,13 +690,13 @@ var cardImage = "<img src=" + result.img + ">",
         $(".description p").slideUp();
         console.log("clicked even- hide " + buttonClick);
     }
+    $(".category-image img.selected").show();
 }
 
 //rotate the card if true
 function rotateCard() {
   var rotate = [true, false],
   cardRevDescript = "<p> <span class='reversed'>Reversed: </span>" + result.reverse + "</p>";
-
   rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
   console.log(rotate);
   if (rotate === true && (buttonClick % 2 !== 0)) {
@@ -714,7 +705,7 @@ function rotateCard() {
   }
 }
 
-
+$(".greeting").hide().fadeIn(1200);
 
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
@@ -724,4 +715,9 @@ $(".fateButton").click(function(){
   displayImg();
   rotateCard();
 });
+
+$(".fateButton").one("click", function(){
+  $("#greeting-message").remove();
+});
+
 });
