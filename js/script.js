@@ -714,22 +714,7 @@ function rotateCard() {
   }
 }
 
-$("div.front").mouseover(function(event){
-  event.stopPropagation();
-  $("div.front p").toggleClass("fateButtonHover");
 
-});
-
-$("div.front").mouseleave(function(){
-  $("div.front p").toggleClass("fateButtonHover");
-});
-
-
-
-// //facebook share
-// function faceBookShare() {
-//   $("").insertAfter(".fateButton");
-// }
 
 //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
@@ -738,6 +723,5 @@ $(".fateButton").click(function(){
   pickCard();
   displayImg();
   rotateCard();
-  faceBookShare();
 });
 });
