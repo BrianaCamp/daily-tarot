@@ -32,31 +32,30 @@ function flipCard() {
 }
 
 function putCardInDOM(card) {
-  var cardImage = "<img src=" + result.img + ">",
-      cardName = "<h2>" + result.name + "</h2>",
-      cardDescription = "<p>" + result.description + "</p>";
-
-  $(".back").append(cardImage).show();
+  var html = cardToHtml(card);
+  $(".back img").remove();
+  $(".back").append(html.img).show();
   flipCard();
-  $(".name").append(cardName).hide().slideDown();
-  $(".description").append(cardDescription).hide().slideDown();
+  $(".name").append(html.name).hide().slideDown();
+  $(".description").append(html.description).hide().slideDown();
+}
+
+function cardToHtml(card) {
+  return {
+    name : "<h2>" + card.name + "</h2>",
+    img : "<img src=" + card.img + ">",
+    description: "<p>" + card.description + "</p>"
+  };
 }
 
 //display the random card and hide it by every click whether even or odd
 function displayImg() {
-var cardImage = "<img src=" + result.img + ">",
-    cardName = "<h2>" + result.name + "</h2>",
-    cardDescription = "<p>" + result.description + "</p>";
-
   if(!calledOneTime && (buttonClick % 2 !== 0)) {
     calledOneTime = true;
     putCardInDOM(result);
   } else if (calledOneTime && (buttonClick % 2 !== 0)) {
       flipCard();
-      $(".back img").replaceWith(cardImage);
-      $(".name").append(cardName).hide().slideDown();
-      $(".description").append(cardDescription).hide().slideDown();
-      console.log("clicked odd " + buttonClick);
+      putCardInDOM(result);
     }
     else {
         $(".front").show();
