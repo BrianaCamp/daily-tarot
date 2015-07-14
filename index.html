@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="Site">
+<body class="site">
 
   <!--facebook initilization-->
   <script>
@@ -65,7 +65,7 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<main class="Site-content">
+<main class="site-content">
 
       <nav class="topnav">
         <img src="images/dailytarotlogo.png" id="logo" alt="Daily Tarot">
@@ -75,7 +75,7 @@
       <section class="card">
         <div class="front">
           <!--card face down-->
-            <img src="images/tarotback.jpg" class="fateButton" alt="tarot card back">
+            <img src="images/tarotback.png" class="fateButton" alt="tarot card back">
         </div>
         <div class="back fateButton">
           <!--card face up-->
@@ -84,12 +84,24 @@
     </div>    <!-- end card wrapper -->
 
     <div class="description-wrapper aligner">
-      <div class="align-item">
+      <section id="greeting-message" class="greeting">
+        <h1>fate awaits</h1>
+        <p>
+          <span>Breathe.</span>
+          Click the card to reveal your truth.
+
+        </p>
+      </section>
+      <section class="category-image">
+
+
+
+      </section>
       <section class="name">
       </section>
       <section class="description">
       </section>
-      </div>
+
     </div>     <!-- end wrapper -->
 
   </div>
@@ -104,6 +116,7 @@
 </footer>
 
   <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/cards.js"></script>
   <script src="js/script.js"></script>
   <script src="js/jquery.flip.js"></script>
 
