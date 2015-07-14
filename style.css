@@ -130,6 +130,19 @@ a:hover {
 
 }
 
+.description-wrapper {
+  margin-bottom: 5%;
+}
+
+.category-image {
+  width: 100%;
+}
+
+.category-image img {
+  display: block;
+  margin: 0 auto;
+}
+
 h1 {
   text-transform: uppercase;
 }
