@@ -78,7 +78,7 @@ $(document).ready(function(){
     }
   }
 
-  $(".greeting").hide().fadeIn(1200);
+  $(".greeting").hide().fadeIn(2000);
 
   //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
