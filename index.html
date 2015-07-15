@@ -21,39 +21,6 @@
 
 </head>
 <body class="site">
-
-  <!--facebook initilization-->
-  <script>
-     window.fbAsyncInit = function() {
-       FB.init({
-         appId      : '937580106306543',
-         xfbml      : true,
-         version    : 'v2.4'
-       });
-       FB.ui({
-       method: 'share',
-       href : 'http://brianacamp.github.io/daily-tarot',
-       action_properties: JSON.stringify({
-        'article': {
-          'og:type' : 'article',
-          'og:url' : "http://brianacamp.github.io/daily-tarot",
-          'og:image' : "http://s5.favim.com/orig/54/cute-kitty-lovely-Favim.com-520357.jpg"
-        }
-       })
-       },
-       function(){});
-     };
-
-     (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "http://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-   </script>   <!--end initilization-->
-
    <!--share button functionality-->
    <div id="fb-root"></div>
     <script>(function(d, s, id) {
