@@ -33,8 +33,8 @@ $(document).ready(function(){
     $(".category-image img").remove();
     $(".back").append(html.img).show();
     $(".category-image").append(html.category).hide().slideDown(1000);
-    $(".name").append(html.name).hide().slideDown(1000);
-    $(".description").append(html.description).hide().delay(500).slideDown(2000);
+    $(".name").append(html.name).hide().delay(700).slideDown(2000);
+    $(".description").append(html.description).hide().delay(700).slideDown(2000);
     return false;
 
   }
