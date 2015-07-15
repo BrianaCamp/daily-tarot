@@ -191,7 +191,8 @@ h1 {
   padding: 10px 0;
 }
 .category-image, .name, .description {
-  width: 350px;
+  max-width: 350px;
+  height: 100%;
 }
 
 .fateButton:focus {

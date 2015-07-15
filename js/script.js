@@ -32,9 +32,10 @@ $(document).ready(function(){
     $(".back img").remove();
     $(".category-image img").remove();
     $(".back").append(html.img).show();
-    $(".category-image").append(html.category).hide().slideDown(2000);
-    $(".name").append(html.name).hide().slideDown(2000);
-    $(".description").append(html.description).hide().slideDown(2000);
+    $(".category-image").append(html.category).hide().slideDown(1000);
+    $(".name").append(html.name).hide().slideDown(1000);
+    $(".description").append(html.description).hide().delay(500).slideDown(2000);
+    return false;
 
   }
 
@@ -45,6 +46,7 @@ $(document).ready(function(){
       description : "<p>" + card.description + "</p>",
       category : "<img src='images/" + card.category + ".svg'" + "alt='" + card.category + "'>"
     };
+
   }
 
   //display the random card and hide it by every click whether even or odd
@@ -61,6 +63,7 @@ $(document).ready(function(){
       $(".description p").slideUp();
       $(".category-image img").hide();
     }
+    return false;
   }
 
   //rotate the card if true
@@ -79,11 +82,13 @@ $(document).ready(function(){
 
   //when the button is clicked, run the buttonCount, pickCard, and displayImg function
 
-  $(".fateButton").click(function(){
+  $(".fateButton").click(function(event){
+    event.preventDefault();
     buttonCount();
     pickCard();
     displayImg();
     rotateCard();
+    return false;
   });
 
   $(".fateButton").one("click", function(){
