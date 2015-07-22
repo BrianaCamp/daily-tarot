@@ -156,11 +156,13 @@ h1 {
 
 .greeting {
   line-height: 2em;
-
 }
 
 .greeting span {
   display: block;
+}
+.greeting img {
+  margin-top: 15px;
 }
 
 .back img, .front img {
