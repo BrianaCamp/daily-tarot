@@ -6,3 +6,4 @@ http://brianacamp.github.io/daily-tarot/
 
 http://thedailytarot.com/
 
+A [CAMP](http://brianacamp.github.io) and [CUTHBERT](http://www.icuthy.com) collaboration.
