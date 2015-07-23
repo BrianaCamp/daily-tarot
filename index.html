@@ -37,33 +37,31 @@
   <div class="wrapper">
     <div class="card-wrapper">
       <section class="card">
-        <div class="front">
+        <figure class="back">
           <!--card face down-->
             <img src="images/tarotback.svg" class="fateButton" alt="tarot card back">
-        </div>
-        <div class="back fateButton">
+        </figure>
+        <figure class="front fateButton">
           <!--card face up-->
-        </div>
+        </figure>
       </section>
     </div>    <!-- end card wrapper -->
 
-    <div class="description-wrapper aligner">
-      <section id="greeting-message" class="greeting">
+    <div class="description-wrapper">
+      <section class="greeting">
         <h1>fate awaits</h1>
         <p>
           Click the card to reveal your truth.
         </p>
         <img src="images/hand.svg" alt="hand icon">
       </section>
+    <div class="card-details aligner">
+      <section class="arcana-icon"></section>
 
-      <section class="category-image">
-      </section>
+      <section class="name"></section>
 
-      <section class="name">
-      </section>
-
-      <section class="description">
-      </section>
+      <section class="description"></section>
+    </div>
     </div>     <!-- end description-wrapper aligner -->
   </div>
 
@@ -93,8 +91,5 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/jquery.flip.js"></script>
-  <script src="js/prefixfree.min.js"></script>
-
 </body>
 </html>
