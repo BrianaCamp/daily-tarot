@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title"
-  content="THE DAILY TAROT" />
+  <meta property="og:title" content="THE DAILY TAROT" />
   <meta property="og:site_name" content="The Daily Tarot"/>
-  <meta property="og:url"
-  content="http://www.thedailytarot.com" />
+  <meta property="og:url" content="http://www.thedailytarot.com" />
   <meta property="og:description" content="What's yours?" />
   <meta property="fb:app_id" content="937580106306543" />
   <meta property="og:image" content="http://www.thedailytarot.com/images/tarotforFB.png">
   <meta property="og:type" content="article" />
-
 
   <title>Daily Tarot</title>
   <script src="//use.typekit.net/mxj1mxm.js"></script>
@@ -34,43 +31,40 @@
 
 <main class="site-content">
 
-      <nav class="topnav">
-        <img src="images/dailytarotlogo.png" id="logo" alt="Daily Tarot">
-      </nav>
-    <div class="wrapper">
+  <nav class="topnav">
+      <img src="images/tarotlogo.svg" id="logo" alt="Daily Tarot">
+  </nav>
+  <div class="wrapper">
     <div class="card-wrapper">
       <section class="card">
-        <div class="front">
+        <figure class="back">
           <!--card face down-->
             <img src="images/tarotback.svg" class="fateButton" alt="tarot card back">
-        </div>
-        <div class="back fateButton">
+        </figure>
+        <figure class="front fateButton">
           <!--card face up-->
-        </div>
+        </figure>
       </section>
     </div>    <!-- end card wrapper -->
 
-    <div class="description-wrapper aligner">
-      <section id="greeting-message" class="greeting">
+    <div class="description-wrapper">
+      <section class="greeting">
         <h1>fate awaits</h1>
         <p>
           Click the card to reveal your truth.
         </p>
         <img src="images/hand.svg" alt="hand icon">
       </section>
+    <div class="card-details aligner">
+      <section class="arcana-icon"></section>
 
-      <section class="category-image">
-      </section>
+      <section class="name"></section>
 
-      <section class="name">
-      </section>
-
-      <section class="description">
-      </section>
-
-    </div>     <!-- end wrapper -->
-
+      <section class="description"></section>
+    </div>
+    </div>     <!-- end description-wrapper aligner -->
   </div>
+
 </main>
 <footer>
   <img src="images/logoicon.svg" class="logoicon">
@@ -97,8 +91,5 @@
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/cards.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/jquery.flip.js"></script>
-  <script src="js/prefixfree.min.js"></script>
-
 </body>
 </html>

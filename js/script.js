@@ -17,26 +17,19 @@ $(document).ready(function(){
 
   }
 
-  //flip card functionality
   function flipCard() {
-    $(".card").flip({
-      axis: 'y',
-      trigger : 'manual',
-      speed : 500
-    });
-    $(".card").flip(true);
+    $('.card').toggleClass('flipped');
   }
 
   function putCardInDOM(card) {
     var html = cardToHtml(card);
-    $(".back img").remove();
-    $(".category-image img").remove();
-    $(".back").append(html.img).show();
-    $(".category-image").append(html.category).hide().slideDown(1000);
+    $(".front img").remove();
+    $(".arcana-icon img").remove();
+    $(".front").append(html.img).show();
+    $(".arcana-icon").append(html.category).hide().slideDown(1000);
     $(".name").append(html.name).hide().delay(700).slideDown(2000);
     $(".description").append(html.description).hide().delay(700).slideDown(2000);
     return false;
-
   }
 
   function cardToHtml(card) {
@@ -49,19 +42,19 @@ $(document).ready(function(){
 
   }
 
-  //display the random card and hide it by every click whether even or odd
+  //display the random card and hide it every other click whether even or odd
   function displayImg() {
 
     if(buttonClick % 2) {
       putCardInDOM(result);
       flipCard();
-      $(".category-image img.selected").show();
+      $(".arcana-icon img.selected").show();
     } else {
-      $(".front").show();
-      $(".card").flip(false);
+      $(".back").show();
+      flipCard();
       $(".name h2").slideUp();
       $(".description p").slideUp();
-      $(".category-image img").hide();
+      $(".arcana-icon img").hide();
     }
     return false;
   }
@@ -73,7 +66,7 @@ $(document).ready(function(){
     rotate = (rotate[Math.floor(Math.random() * rotate.length)]);
     console.log(rotate);
     if (rotate && (buttonClick % 2)) {
-      $(".back img").addClass("rotate");
+      $(".front img").addClass("rotate");
       $(".description").append(cardRevDescript).hide().slideDown();
     }
   }
@@ -92,7 +85,7 @@ $(document).ready(function(){
   });
 
   $(".fateButton").one("click", function(){
-    $("#greeting-message").remove();
+    $(".greeting").remove();
   });
 
 });
