@@ -200,7 +200,7 @@ h1 {
 
 .description-wrapper {
   width: 100%;
-  padding: 5px 0 10px 0;
+  padding: 0 0 60px 0;
   text-align: center;
   margin: 0 auto;
 }
@@ -222,7 +222,6 @@ h1 {
   font-size: 1.5em;
   color: #40f8b1;
   letter-spacing: 2px;
-  padding-top: 10px;
 }
 
 .arcana-icon, .name, .description {
