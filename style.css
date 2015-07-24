@@ -200,9 +200,9 @@ h1 {
 
 .description-wrapper {
   width: 100%;
-  padding-bottom: 10px;
+  padding: 5px 0 10px 0;
   text-align: center;
-  margin: 5px auto 25px;
+  margin: 0 auto;
 }
 
 .greeting {
@@ -226,7 +226,7 @@ h1 {
 }
 
 .arcana-icon, .name, .description {
-  width: 350px;
+  width: 100%;
   height: 100%;
 }
 
@@ -352,6 +352,6 @@ footer {
 
 @media (min-width: 1224px) {
 .wrapper {
-  width: 60%;
+  width: 65%;
 }
 }
